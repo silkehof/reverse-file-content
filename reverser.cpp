@@ -22,4 +22,9 @@ int main()
     cout << result + "\n";
 
     file.close();
+
+    // Write result to new file
+    ofstream newFile("output.txt");
+    newFile << result;
+    newFile.close();
 }
